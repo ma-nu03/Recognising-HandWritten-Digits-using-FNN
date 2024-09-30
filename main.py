@@ -1,7 +1,6 @@
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
-%matplotlib inline
 import os
 path = os.listdir("../input")
 print(path)
@@ -145,7 +144,6 @@ np.random.seed(1127825)
 W = [1e-1*np.random.randn(n, n_H), 1e-1*np.random.randn(n_H, K)]
 b = [np.random.randn(n_H)]
 
-%%time
 gW0 = gW1 = gb0 = 1
 
 for i in range(num_iter):
